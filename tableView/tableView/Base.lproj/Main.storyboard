@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zDl-GK-qaN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="d62-nU-4IO">
+            <objects>
+                <navigationController id="zDl-GK-qaN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="miJ-7p-CDd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fpj-la-4mO" kind="relationship" relationship="rootViewController" id="7A6-p7-WNU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Y7-p8-Mhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B8x-kT-SqV">
+            <objects>
+                <viewController id="Fpj-la-4mO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XAi-bg-wPf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="A yellow wolf in the wood you see what will you do My friend " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9gT-ro-x1u">
+                                <rect key="frame" x="67" y="81" width="240" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.53536244970000002" green="0.97655881580000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.22644616579999999" blue="0.38029979489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxm-Gb-Y1u">
+                                <rect key="frame" x="143" y="213" width="89" height="30"/>
+                                <state key="normal" title="RUN --&gt;&gt;&gt;"/>
+                                <connections>
+                                    <segue destination="pBp-2Q-OQe" kind="push" id="Ju0-Cn-qbT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dB-2p-plT">
+                                <rect key="frame" x="138" y="312" width="98" height="30"/>
+                                <state key="normal" title="FIGHT &lt;&lt;&lt;--"/>
+                                <connections>
+                                    <segue destination="i3A-hV-eJf" kind="push" id="DmE-mp-1e1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gxm-Gb-Y1u" firstAttribute="top" secondItem="8Qk-hI-fem" secondAttribute="top" constant="149" id="1OJ-Bi-gpO"/>
+                            <constraint firstItem="8Qk-hI-fem" firstAttribute="bottom" secondItem="1dB-2p-plT" secondAttribute="bottom" constant="325" id="651-dO-niW"/>
+                            <constraint firstItem="Gxm-Gb-Y1u" firstAttribute="centerX" secondItem="8Qk-hI-fem" secondAttribute="centerX" id="ZEc-J1-QhI"/>
+                            <constraint firstItem="Gxm-Gb-Y1u" firstAttribute="leading" secondItem="8Qk-hI-fem" secondAttribute="leading" constant="143" id="jwo-HD-kWH"/>
+                            <constraint firstItem="1dB-2p-plT" firstAttribute="centerX" secondItem="8Qk-hI-fem" secondAttribute="centerX" id="r7Y-NB-EbK"/>
+                            <constraint firstItem="1dB-2p-plT" firstAttribute="leading" secondItem="8Qk-hI-fem" secondAttribute="leading" constant="138" id="suM-Ng-Qtk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Qk-hI-fem"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aG4-9m-3rc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krU-Wv-yLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="125.4872563718141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4jI-43-58Z">
+            <objects>
+                <viewController id="pBp-2Q-OQe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJG-iJ-qac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="well i think you may be safe on a Tree somewhere maybe" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BsU-E6-KFd">
+                                <rect key="frame" x="67" y="81" width="240" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.53536244970000002" green="0.97655881580000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.22644616579999999" blue="0.38029979489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JII-Nh-Bvr">
+                                <rect key="frame" x="138" y="312" width="98" height="30"/>
+                                <state key="normal" title="FIND A CAVE"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPV-Oy-D9w">
+                                <rect key="frame" x="122" y="213" width="131" height="30"/>
+                                <state key="normal" title="CLIMB ON TREE"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JII-Nh-Bvr" firstAttribute="centerX" secondItem="Tx2-SM-d7A" secondAttribute="centerX" id="ANF-Yg-4yL"/>
+                            <constraint firstItem="wPV-Oy-D9w" firstAttribute="leading" secondItem="Tx2-SM-d7A" secondAttribute="leading" constant="122" id="I4S-9U-JFI"/>
+                            <constraint firstItem="wPV-Oy-D9w" firstAttribute="centerX" secondItem="Tx2-SM-d7A" secondAttribute="centerX" id="hMu-re-9En"/>
+                            <constraint firstItem="Tx2-SM-d7A" firstAttribute="bottom" secondItem="JII-Nh-Bvr" secondAttribute="bottom" constant="325" id="qbA-lo-8uk"/>
+                            <constraint firstItem="JII-Nh-Bvr" firstAttribute="leading" secondItem="Tx2-SM-d7A" secondAttribute="leading" constant="138" id="rTP-DK-tHk"/>
+                            <constraint firstItem="wPV-Oy-D9w" firstAttribute="top" secondItem="Tx2-SM-d7A" secondAttribute="top" constant="149" id="wCT-6s-IfC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tx2-SM-d7A"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pHf-Pl-nav"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZQ-Dg-wGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.8" y="-161.46926536731635"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QAX-ZT-7yn">
+            <objects>
+                <viewController id="i3A-hV-eJf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Xg-zx-tmz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="well well you are a fighter let see what he will do to or you'll do to him.Lets Fight" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-u3-jv6">
+                                <rect key="frame" x="67" y="81" width="240" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.53536244970000002" green="0.97655881580000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.22644616579999999" blue="0.38029979489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JP-Sy-zB8">
+                                <rect key="frame" x="131" y="214" width="113" height="30"/>
+                                <state key="normal" title="THROW KNIFE"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvn-5f-7Mx">
+                                <rect key="frame" x="125" y="318" width="124" height="30"/>
+                                <state key="normal" title="THROW STONE"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7JP-Sy-zB8" firstAttribute="leading" secondItem="RPB-qH-UDY" secondAttribute="leading" constant="131" id="B4E-un-U4m"/>
+                            <constraint firstItem="7JP-Sy-zB8" firstAttribute="centerX" secondItem="RPB-qH-UDY" secondAttribute="centerX" id="DaG-tI-d1d"/>
+                            <constraint firstItem="Zvn-5f-7Mx" firstAttribute="centerX" secondItem="RPB-qH-UDY" secondAttribute="centerX" id="HIY-CU-thS"/>
+                            <constraint firstItem="7JP-Sy-zB8" firstAttribute="top" secondItem="RPB-qH-UDY" secondAttribute="top" constant="150" id="K37-4d-S1S"/>
+                            <constraint firstItem="RPB-qH-UDY" firstAttribute="bottom" secondItem="Zvn-5f-7Mx" secondAttribute="bottom" constant="319" id="mWH-Ff-zJp"/>
+                            <constraint firstItem="Zvn-5f-7Mx" firstAttribute="leading" secondItem="RPB-qH-UDY" secondAttribute="leading" constant="125" id="qUa-Ds-e89"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RPB-qH-UDY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G5o-aV-yk0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRW-El-KBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.8" y="679.61019490254876"/>
+        </scene>
+    </scenes>
+</document>
