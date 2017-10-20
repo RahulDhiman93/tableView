@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="373.60000000000002" y="125.4872563718141"/>
         </scene>
-        <!--View Controller-->
+        <!--MYOA-->
         <scene sceneID="4jI-43-58Z">
             <objects>
-                <viewController id="pBp-2Q-OQe" sceneMemberID="viewController">
+                <viewController id="pBp-2Q-OQe" customClass="MYOA" customModule="tableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJG-iJ-qac">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="1336.8" y="-161.46926536731635"/>
         </scene>
-        <!--View Controller-->
+        <!--MYOA-->
         <scene sceneID="QAX-ZT-7yn">
             <objects>
-                <viewController id="i3A-hV-eJf" sceneMemberID="viewController">
+                <viewController id="i3A-hV-eJf" customClass="MYOA" customModule="tableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Xg-zx-tmz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
